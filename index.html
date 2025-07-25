@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower Market</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/23fbe7aa4e.js"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      body {
+        font-family: "inter";
+      }
+
+      .noto-serif {
+        font-family: "Noto Serif", serif;
+      }
+      .newsletter{
+        background-image: url('./assets/newsletterbg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 60vh;
+      }
+    </style>
+  </head>
+  <body class="bg-[#f5f8ff]">
+    
+    <!-- Header Section Starts Here & Tailwind CSS-->
+    <header class="px-2 md:px-0 md:w-[85%] mx-auto">
+      <!-- Nav Section Starts Here & Tailwind CSS-->
+      <nav class="flex justify-between items-center py-8">
+        <img class="h-14" src="assets/logo.png" alt="logo" />
+        <ul class="flex gap-10">
+          <li class="max-sm:hidden"><a class="font-bold" href="#">Home</a></li>
+          <li class="max-sm:hidden"><a class="text-black/50" href="#">Shop</a></li>
+          <li class="max-sm:hidden"><a class="text-black/50" href="#">About us</a></li>
+          <li>
+            <a href="#"
+              ><i class="text-sm mr-2 fa-solid fa-cart-shopping"></i>Cart
+              ($56)</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Banner Section Starts Here & Tailwind -->
+       
+       <section class="flex flex-col-reverse md:flex-row w-full gap-8 items-center my-10">
+        <div class="md:w-[50%]">
+          <h1 class="px-2 md:px-0 text-[24px] md:text-[35px] lg:text-[50px] xl:text-[60px]  md:leading-10 lg:leading-20 noto-serif font-bold uppercase">Always <span class="text-[#E95A08]">Fresh</span> <br> <span class="text-[#E95A08]">Flowers</span></h1>
+          <p class="text-[14px] lg:text-[18px] xl:text-[22px] text-black/50 md:leading-[20px] lg:leading-[34px] xl:mt-10 max-sm:mt-4 max-sm:px-2">Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh flowers that are perfect for any occasion.</p>
+        </div>
+        <div class="md:w-[50%]">
+          <img class="w-full" src="assets/hero-flower.png" alt="">
+        </div>
+       </section>
+
+       </header>
+
+  </body>
+</html>
